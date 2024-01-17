@@ -723,3 +723,100 @@ font-size: 30px;
     color: #EEC759;
     cursor: pointer;
 }
+
+
+
+
+
+.basket-popup{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+.show-basket{
+    opacity: 1;
+    pointer-events: auto;
+    
+}
+.overlay-basket{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    background-color: #3D3C42;
+    opacity: 0.4;
+    opacity: 0;
+    transform: scale(0.3);
+    transition: all 0.2s ease-in-out;
+}
+.show-basket .overlay-basket{
+    opacity: 0.4;
+    transform: scale(1);
+}
+.basket-body{
+    width: 50%;
+    height: auto;
+    background-color: #8F43EE;
+    transform: scale(0.3);
+    transition: transform 1s ease-in-out;
+}
+.show-basket .basket-body{
+    transform: scale(1);
+}
+.basket-frame{
+    padding: 20px;
+}
+.basket-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.basket-close-icon{
+    font-size: 32px;
+    background-color: #FB2576;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 8px;
+}
+.basket-all-content{
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.basket-all-content::-webkit-scrollbar{
+    background-color:#00bf72;
+    color: #FB2576;
+    width: 5px;
+    border-radius: 20px;
+}
+.basket-all-content::-webkit-scrollbar-thumb{
+    background-color: #FB2576;
+    border-radius: 20px;
+}
+
+.basket-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border: 1px solid crimson;
+}
+.basket-content div{
+    width: 25%;
+}
+.p-img img{
+    width: 100%;
+    height: 100%;
+}
