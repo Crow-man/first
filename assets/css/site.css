@@ -756,6 +756,7 @@ font-size: 30px;
     background-color: #3D3C42;
     opacity: 0.4;
     opacity: 0;
+    
     transform: scale(0.3);
     transition: all 0.2s ease-in-out;
 }
@@ -769,6 +770,8 @@ font-size: 30px;
     background-color: #8F43EE;
     transform: scale(0.3);
     transition: transform 1s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 .show-basket .basket-body{
     transform: scale(1);
@@ -819,4 +822,32 @@ font-size: 30px;
 .p-img img{
     width: 100%;
     height: 100%;
+}
+
+
+body{
+    overflow-x: hidden;
+}
+.btn-sidebar{
+    position: absolute;
+    left: 25%;
+}
+
+.sidebar{
+    width: 0%;
+    overflow-x: hidden;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    background-color: #272829;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+    transition: all 0.5s linear;
+}
+.sidebar.show-sidebar{
+    opacity: 1;
+    pointer-events: auto;
+    width: 25%;
 }
