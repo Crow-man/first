@@ -1,0 +1,18 @@
+:root{
+    --border-inputs-color:#9575DE;
+    --border-inputs-focus-color:#6554AF;
+    --border-bottom-divider-color:#8F43EE;
+    --border-box-color:#61677A;
+    --logo-color:#6554AF;
+    --text-color-main:#3D3C42;
+    --text-input-color:#61677A;
+    --bg-main:#ccc;
+    --top-header-color:#8F43EE;
+    --active-border-bottom:#FB2576;
+    --menu-category-color:#8F43EE;
+    --input-placeholder-color:#9575DE;
+    --checkbox-color:#8F43EE;
+    --mega-menu-width:900px;
+    --su-menu-width:20px;
+    --box-shadow-amazing: rgb(220, 178, 233, 0.99) 0px 3px 6px, rgba(119, 10, 182, 0.99) 0px 3px 6px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 'header header header' 'main main main' 'footer footer footer';
+            grid-template-rows: 100px 200px 400px;
+            grid-template-columns: repeat(3,1fr);
+            
+        }
+        .head{
+            grid-area: header;
+            background-color: aqua;
+        }
+        .main{
+            grid-area: main;
+            background-color: green;
+        }
+        .foot{
+            grid-area: footer;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head"></div>
+        <div class="main"></div>
+        <div class="foot">
+            <span>hello</span>
+        </div>
+    </div>
+</body>
+</html>
