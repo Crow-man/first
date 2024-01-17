@@ -17,3 +17,6 @@ let sidebar=document.querySelector('.sidebar')
 btnsidebar.addEventListener('click',function(){
     sidebar.classList.toggle('show-sidebar');
 })
+
+
+// test git add .
