@@ -23,10 +23,22 @@ header{
 .menu-top .social-medias{
     color: #fff;
     padding-right: 10px;
+    padding: 10px;
 }
 .social-medias i{
+    margin-left: 5px;
+    margin-right: 5px;
     font-size: 22px;
     cursor: pointer;
+}
+.social-medias i:first-child{
+    color: #FB2576;
+}
+.social-medias i:nth-child(2){
+    color: aqua;
+}
+.social-medias i:last-child{
+    color: blue;
 }
 .c-1{
     color:whitesmoke;
@@ -35,6 +47,23 @@ header{
 }
 .phone-number{
     padding-left: 10px;
+    display: flex;
+    align-items: center;
+
+}
+.phone-number div{
+    height: 100%;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.btn-sidebar{
+    width: 35px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #000;
+    cursor: pointer;
 }
 .p-n-1 , .p-n-2{
     color: whitesmoke;
@@ -309,7 +338,7 @@ font-size: 30px;
     font-size: 52px;
     font-weight: bolder;
     color: transparent;
-    background-image: url(./1.jpeg);
+    background-image: url(../img/1.jpeg);
     background-position: center;
     background-clip: text;
     -webkit-background-clip: text;
@@ -783,6 +812,8 @@ font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 25px;
+    color: white;
 }
 .basket-close-icon{
     font-size: 32px;
@@ -797,15 +828,16 @@ font-size: 30px;
     overflow-y: auto;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    padding: 10px;
 }
 .basket-all-content::-webkit-scrollbar{
-    background-color:#00bf72;
+    background-color:#FB2576;
     color: #FB2576;
     width: 5px;
     border-radius: 20px;
 }
 .basket-all-content::-webkit-scrollbar-thumb{
-    background-color: #FB2576;
+    background-color: #FFDFDF;
     border-radius: 20px;
 }
 
@@ -814,7 +846,9 @@ font-size: 30px;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    border: 1px solid crimson;
+    border: 10px solid #FFDFDF;
+    padding: 10px;
+    margin-bottom: 15px;
 }
 .basket-content div{
     width: 25%;
@@ -828,26 +862,78 @@ font-size: 30px;
 body{
     overflow-x: hidden;
 }
-.btn-sidebar{
-    position: absolute;
-    left: 25%;
-}
+
 
 .sidebar{
     width: 0%;
     overflow-x: hidden;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0%;
+    right: 0%;
     background-color: #272829;
     opacity: 0;
     pointer-events: none;
     z-index: 10;
     transition: all 0.5s linear;
 }
+.sidebar-content{
+    position: relative;
+    height: 100%;
+}
 .sidebar.show-sidebar{
     opacity: 1;
     pointer-events: auto;
     width: 25%;
+}
+.sidebar-body{
+    padding: 10px;
+    color: white;
+    overflow-y: auto;
+    height: 70%;
+}
+.sidebar-body::-webkit-scrollbar{
+    width: 5px;
+    background-color: #FB2576;
+    border-radius: 10px;
+}
+.sidebar-body::-webkit-scrollbar-thumb{
+    background-color: #FFDFDF;
+    border-radius: 10px;
+}
+.sidebar-menu ul{
+    list-style: none;
+    padding-left: 20px;
+}
+.sidebar-menu ul li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-bottom: 1px solid #3C4048;
+}
+.sidebar-menu ul li:hover{
+    background-color: gray;
+}
+.btn-sidebar i{
+    font-size: 20px;
+}
+.sidebar-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
+}
+.btn-close-sidebar{
+    color: #FB2576;
+    font-size: 25px;
+    cursor: pointer;
+}
+.sidebar-footer{
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    border-top: 1px solid #3D3C42;
+    width: 100%;
 }
